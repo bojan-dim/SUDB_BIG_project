@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My diary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="home.html">My diary</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="read.html">Read</a></li>
+            <li><a href="update.html">Update</a></li>
+            <li><a href="delete.html">Delete</a></li>
+            <li><a href="write.html">Write</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- <form action="php/write.php" method="post">
+    Author Name: <input type="text" name="auth_name"><br>
+    Subject: <input type="text" name="subject"><br>
+    Text: <textarea name="diary_post" rows="5" cols="40"></textarea>
+    <br>
+    <input type="submit">
+</form>
+-->
+<form action="php/write.php" method="post">
+    PostName: <label>
+    <input type="text" name="post_name">
+</label><br>
+    Author_Name: <label>
+    <input type="text" name="auth_name">
+</label><br>
+    Subject: <label>
+    <input type="text" name="subj_abr">
+</label><br>
+    Text: <label>
+    <textarea name="post_text" rows="5" cols="40"></textarea>
+</label><br>
+    <input type="submit">
+</form>
+
+<script src="php/write.php"></script>
+
+</body>
+</html>
