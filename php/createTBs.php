@@ -42,7 +42,7 @@ $posts = "CREATE TABLE `diary`.`posts` (
   `PostName` VARCHAR(45) NULL,
   `AuthorName` VARCHAR(45) NOT NULL,
   `SubjAbr` VARCHAR(2) NOT NULL,
-  `Date` DATETIME NOT NULL,
+  `PostDate` DATETIME NOT NULL,
   `Text` LONGTEXT NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `SubjAbr_idx` (`SubjAbr` ASC),

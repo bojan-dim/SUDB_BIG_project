@@ -18,6 +18,4 @@ if (mysqli_query($conn, $sql)) {
     echo "Error creating database: " . mysqli_error($conn);
 }
 
-mysqli_close($conn);
-
 ?>
