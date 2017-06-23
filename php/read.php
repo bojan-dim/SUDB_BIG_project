@@ -11,19 +11,24 @@
         die("Conn failed!" .mysql_connect_error());
     }
 
-    $sql = "SELECT id, firstname, lastname FROM MyGuests";
+    $postname="";
+    $postname = $_POST['post_name'];
+    $sql = "SELECT PostName, AuthorName, SubjAbr, PostDate, Text FROM Posts WHERE PostName = ".$postname." ";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {
         // output data of each row
         while($row = mysqli_fetch_assoc($result)) {
-            echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+            echo "postName" . $row["PostName"].
+                "AuthorName:" . $row["AuthorName"].
+                "Subj" .$row["SubjAbr"].
+                "Date:" .$row["PostDate"].
+                "Text:" .$row["Text"].
+                "<br>";
         }
     } else {
         echo "0 results";
     }
-
-
 
     mysqli_close($conn);
 ?>

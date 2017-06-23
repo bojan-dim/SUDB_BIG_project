@@ -24,14 +24,22 @@
     </div>
 </nav>
 
-<form action="php/delete.php" method="post">
+<form action="php/deletePost.php" method="post">
     Post name: <input type="text" name="post_name"><br>
     <input type="submit">
 </form>
 
-<form action="php/author_info.php" method="post">
+<form action="php/deleteAuthor.php" method="post">
+    Delete an author:
     Author Name: <input type="text" name="auth_name"><br>
     Author Email: <input type="text" name="auth_email"><br>
+    <input type="submit">
+</form>
+
+<form action="php/deleteSubject.php" method="post">
+    Delete a subject:
+    Subj Abriviature: <input type="text" name="subj_abr"><br>
+    Subj Full Name: <input type="text" name="subj_name"><br>
     <input type="submit">
 </form>
 

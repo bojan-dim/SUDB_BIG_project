@@ -24,16 +24,8 @@
     </div>
 </nav>
 
-
-<!-- <form action="php/write.php" method="post">
-    Author Name: <input type="text" name="auth_name"><br>
-    Subject: <input type="text" name="subject"><br>
-    Text: <textarea name="diary_post" rows="5" cols="40"></textarea>
-    <br>
-    <input type="submit">
-</form>
--->
-<form action="php/write.php" method="post">
+<!-- input a post --->
+<form action="php/writePost.php" method="post">
     PostName: <label>
     <input type="text" name="post_name">
 </label><br>
@@ -49,7 +41,20 @@
     <input type="submit">
 </form>
 
-<script src="php/write.php"></script>
+<!-- input an author --->
+<form action="php/writeAuthor.php" method="post">
+    Add an author:
+    Author Name: <input type="text" name="auth_nm"><br>
+    Author Email: <input type="text" name="auth_eml"><br>
+    <input type="submit">
+</form>
+
+<!-- input a subject --->
+<form action="php/writeSubj.php" method="post">
+    Theme abr: <input type="text" name="subabr"><br>
+    Full theme name: <input type="text" name="subj_name"><br>
+    <input type="submit">
+</form>
 
 </body>
 </html>
